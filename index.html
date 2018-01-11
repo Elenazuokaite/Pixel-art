@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Pixel Art Maker!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Lab: Pixel Art Maker</h1>
+    <h1>Pixel Art Maker</h1>
     <h2>Choose Grid Size</h2>
     <form id="sizePicker">
         Grid Height:
@@ -17,14 +17,12 @@
         <input type="number" id="input_width" name="width" min="1" value="1">
         <button type="button" onclick="makeGrid($('#input_height').val(), $('#input_width').val())">Make grid</button>
     </form>
-
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker">
-
     <h2>Design Canvas</h2>
+    <hr>
     <table id="pixel_canvas" width="960px" style="height:960px;"></table>
     <div id="container"></div>
-
     <script src="designs.js"></script>
 </body>
 </html>

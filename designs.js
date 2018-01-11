@@ -1,19 +1,15 @@
-// Select color input
-// Select size input
-
-// When size is submitted by the user, call makeGrid()
 function makeGrid(y, x) {
-    if ($('.test')) {
-        $('.test').remove();
+    if ($('.grid')) {
+        $('.grid').remove();
     }
     for (var rows = 0; rows < y; rows++) {
-        $("<tr class='test'></tr>").appendTo("#pixel_canvas");        
+        $("<tr class='grid'></tr>").appendTo("#pixel_canvas");        
     };
     for (var columns = 0; columns < x; columns++) {
-            $("<td></td>").appendTo(".test");
+            $("<td></td>").appendTo(".grid");
     };
-    $(".test").width(960 / y);
-    $(".test").height(960 / x);
+    $(".grid").width(960 / y);
+    $(".grid").height(960 / x);
     var colorValue = $('#colorPicker');
     drawCanvas(colorValue.val());
     colorValue.change(function () {
